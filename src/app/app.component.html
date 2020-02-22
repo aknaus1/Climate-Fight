@@ -1,11 +1,43 @@
-<div>
-  <h1>Climate Tacker</h1>
+<div class = "ui segment">
+  <h1 class="ui center aligned header">
+    {{title}}
+  </h1>
+</div>
+
+<div class="ui top attached inverted menu">
+  <div class="ui medium header item" routerLink="/home">
+    {{title}}
+  </div>
+  <div class="ui right small header dropdown item">
+    <i class="ui bars icon"></i>
+    <div class="menu">
+      <div class="item" routerLink="/home">
+        <i class="home icon"></i>
+        Home
+      </div>
+      <div class="divider"></div>
+      <div class="item" routerLink="/resources">
+        <i class="plane icon"></i>
+        Resources
+      </div>
+      <div class="divider"></div>
+      <div class="item" routerLink="/stats">
+        <i class="briefcase icon"></i>
+        Statistics
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui bottom attached container segment pushable" id="content">
+  <router-outlet></router-outlet>
 </div>
 
 <div>
   <h2>Statistics</h2>
   <div>
     <h3>Global Temperatures</h3>
+    <p>Since the industrial revolution global temperatures have </p>
   </div>
   <div>
     <h3>Sea Level</h3>
@@ -28,29 +60,29 @@
 </div>
 
 <div>
-  <h2>Resources</h2>
+  <h2><a href="https://davidsuzuki.org/what-you-can-do/top-10-ways-can-stop-climate-change/">Resources</a></h2>
+  <h3>What can you do?</h3>
+
 
   <div>
     <h3>Home</h3>
-    <p>Lights</p>
-    <p1> Turn off lights when not in use</p1>
-    <p>Water</p>
-    <p1>Try to limit the length of your showers to 5 minutes. Keep in mind that baths use significantly more water than showers.</p1>
-    <p>Heating</p>
-    <p1>During the winter, the recommended temperature is 68 degrees Fahrenheit. In the summer 
+    <p><a href="https://www.marketwatch.com/story/11-ways-to-lower-your-water-bill-2019-08-01">Water</a></p>
+    <p>Try to limit the length of your showers to 5 minutes. Keep in mind that baths use significantly more water than showers.</p>
+    <p><a href="https://www.libertymutual.com/masterthis/save-on-your-heating-bill">Heating</a></p>
+    <p>During the winter, the recommended temperature is 68 degrees Fahrenheit. In the summer, try to keep the AC no lower than 72.</p>
   </div>
 
   <div>
     <h3>Travel</h3>
-    <p>Public Transport</p>
-    <p>Work/school commute</p>
-    <p>Flights</p>
+    <p><a href="https://play.google.com/store/apps/details?id=com.thetransitapp.droid&hl=en_US">Public Transport</a></p>
+    <p>Use Public Transport as much as possible. Transit app for iOS and Android is very useful for determining routes and schedules.</p>
+    <p><a href="https://andthenwesaved.com/how-to-save-money-on-your-commute/">Work/School Commute</a></p>
+    <p>If you can, find a bus/ train route to get to school/work, or organize a carpool with coworkers near you. Using a car to commute 5 days a week all year quickly adds up!</p>
   </div>
 
   <div>
-    <h3>Community</h3>
-    <p>Groups</p>
-    <p>Advocacy</p>
-    <p>Policies</p>
+    <h3><a href="https://www.globalchange.gov/engage">Community</a></h3>
+    <p></p>
+
   </div>
 </div>
