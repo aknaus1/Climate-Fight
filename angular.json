@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "h4h"
+    }
+  },
+  "defaultProject": "h4h",
+  "cli": {
+    "analytics": false
+  }
 }
