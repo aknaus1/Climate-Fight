@@ -128,7 +128,7 @@
     </style>
   </head>
 
-  <body id="root">
+  <body id="home">
     <div class="ui large top fixed hidden menu">
       <div class="ui container">
         <a class="active item">Home</a> <a class="item">Work</a>
@@ -175,6 +175,7 @@
       </div>
       <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
+          <a id="stat"></a>
           <div class="row">
             <div class="eight wide column">
               <app-stats></app-stats>
@@ -195,6 +196,7 @@
       </div>
       <div class="ui vertical stripe segment">
         <div class="ui text container">
+          <a id="rsc"></a>
           <app-resources></app-resources>
         </div>
       </div>
@@ -204,19 +206,19 @@
             <div class="three wide column">
               <h4 class="ui inverted header">About</h4>
               <div class="ui inverted link list">
-                <a class="item" href="#root">Sitemap</a>
-                <a class="item" href="#root">Contact Us</a>
-                <a class="item" href="#root">Religious Ceremonies</a>
-                <a class="item" href="#root">Gazebo Plans</a>
+                <a class="item" href="#home">Sitemap</a>
+                <a class="item" href="#home">Contact Us</a>
+                <a class="item" href="#home">Religious Ceremonies</a>
+                <a class="item" href="#home">Gazebo Plans</a>
               </div>
             </div>
             <div class="three wide column">
               <h4 class="ui inverted header">Services</h4>
               <div class="ui inverted link list">
-                <a class="item" href="#root">Banana Pre-Order</a>
-                <a class="item" href="#root">DNA FAQ</a>
-                <a class="item" href="#root">How To Access</a>
-                <a class="item" href="#root">Favorite X-Men</a>
+                <a class="item" href="#home">Banana Pre-Order</a>
+                <a class="item" href="#home">DNA FAQ</a>
+                <a class="item" href="#home">How To Access</a>
+                <a class="item" href="#home">Favorite X-Men</a>
               </div>
             </div>
             <div class="seven wide column">
@@ -251,23 +253,3 @@
     </script>
   </body>
 </html>
-
-
-<div>
-  <div id="home" class="item">
-    <div class="ui segment">
-      <h1 class="ui center aligned header">
-        {{title}}
-      </h1>
-    </div>
-    <app-home></app-home>
-  </div>
-
-  <div id="stat" class="item">
-    <app-stats></app-stats>
-  </div>
-
-  <div id="rsc" class="item">
-    <app-resources></app-resources>
-  </div>
-</div>
