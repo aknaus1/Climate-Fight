@@ -156,45 +156,15 @@
         <div class="ui text container">
           <h1 class="ui inverted header">{{title}}</h1>
           <h2>Saving the world one person at a time.</h2>
-          <div class="ui huge primary button" href="#stat">
-            Get Started
-            <i class="right arrow icon"></i>
-          </div>
-        </div>
-      </div>
-      <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-          <div class="center aligned row">
-            <div class="column">
-              <h3>
-                If you still say that we are wasting valuable lesson time,
-                then let me remind you that our political leaders have wasted
-                decades through denial and inaction."
-              </h3>
-              <p>Greta Thunberg</p>
+          <a href="#stat">
+            <div class="ui huge primary button">
+                Get Started
+                <i class="right arrow icon"></i>
             </div>
-            <div class="column">
-              <h3>
-                "Climate change is a problem which can no longer be left to
-                a future generation."
-              </h3>
-              <p>Pope Francis</p>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
-      <div class="ui vertical stripe segment">
-        <div class="ui container">
-          <a id="stat"></a>
-          <app-stats></app-stats>
-        </div>
-      </div>
-      <div class="ui vertical stripe segment">
-        <div class="ui container">
-          <a id="rsc"></a>
-          <app-resources></app-resources>
-        </div>
-      </div>
+      <router-outlet></router-outlet>
       <div class="ui inverted vertical footer segment">
         <div class="ui container">
           <div class="ui stackable inverted divided equal height stackable grid">
@@ -214,13 +184,8 @@
             <div class="three wide column">
               <h4 class="ui inverted header">Support Us</h4>
               <div class="ui inverted link list">
-<<<<<<< HEAD
                 <a class="item" href="https://venmo.com/AndrewKnaus">Venmo: Andrew</a>
                 <a class="item" href="https://venmo.com/Silas_Kidd-Myers">Venmo: Silas</a>
-=======
-                  <a class="item" href="https://venmo.com/AndrewKnaus">Venmo: Andrew</a>
-                  <a class="item" href="https://venmo.com/Silas_Kidd-Myers">Venmo: Silas</a>
->>>>>>> 6b4519a4bcba79ec527027735c6308019a0215d3
               </div>
             </div>
             <div class="seven wide column">
@@ -229,6 +194,7 @@
                 <p class="item">
                   Together we can save the world!!!
                 </p>
+                <p routerLink="/source">Sources</p>
               </div>
             </div>
           </div>
