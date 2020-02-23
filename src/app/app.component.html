@@ -4,14 +4,14 @@
       {{title}}
     </a>
   </div>
-  <div class="ui pointing center aligned menu">
-    <a class="item">
+  <div class="ui secondary menu">
+    <a class="item" href="#home">
       Home
     </a>
-    <a class="item">
+    <a class="item" href="#stat">
       Statistics
     </a>
-    <a class="item">
+    <a class="item" href="#rsc">
       Resources
     </a>
   </div>
@@ -23,45 +23,18 @@
   </h1>
 </div>
 
-<div class="ui top attached inverted secondary pointing menu">
-  <div class="ui medium header item" routerLink="/home">
-    {{title}}
-  </div>
-  <div class="ui right small header dropdown item">
-    <i class="ui bars icon"></i>
-    <div class="menu">
-      <div class="item" href="home">
-        <i class="home icon"></i>
-        Home
-      </div>
-      <div class="divider"></div>
-      <div class="item" href="stat">
-        <i class="plane icon"></i>
-        Statistics
-      </div>
-      <div class="divider"></div>
-      <div class="item" href="rsc">
-        <i class="briefcase icon"></i>
-        Resources
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="ui bottom attached container segment pushable" id="content">
-  <section id="home" class="home">
-    <div>
+  <section id="home">
+    <div class="item">
       <app-home></app-home>
     </div>
   </section>
-  <section id="stat" class="stat">
-    <div>
+  <section id="stat">
+    <div class="item">
       <app-stats></app-stats>
     </div>
   </section>
-  <section id="rsc" class="rsc">
-    <div>
+  <section id="rsc">
+    <div class="item">
       <app-resources></app-resources>
     </div>
   </section>
-</div>

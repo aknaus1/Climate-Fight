@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Climate Tracker';
-  scroll(el: HTMLElement) {
-    el.scrollIntoView();
-  }
+  title = 'World Climate Tracker';
 }
